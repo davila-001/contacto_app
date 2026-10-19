@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="mensaje-exito">
+    <h2>✅ ¡Mensaje enviado!</h2>
+    <p>Gracias <strong>{{ nombre }}</strong>, tus datos fueron enviados correctamente.</p>
+    <a href="{{ url_for('routes.index') }}" class="boton">Enviar otro mensaje</a>
+</div>
+{% endblock %}
